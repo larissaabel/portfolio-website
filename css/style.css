@@ -1,0 +1,103 @@
+/*
+Colors used:
+CTA color (blue): #0078D7;
+CTA focus color (coral): #FF7656;
+Accent color (coral): #FFA38E;
+Accent color (turquoise): 9DCDD2;
+Background color (light grey): #F5F5F5;
+Background color (light coral): EED0C5;
+Background color (light turquoise): C0D0CF;
+*/
+body {
+  background-color: #FFFFFF;
+  font-family: 'Roboto',sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.6;
+  color: #2B2B2B;
+}
+
+
+h1, h2, h3 {
+  line-height: 1.4;
+}
+h1 {
+  font-size: 2.75em;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 2.25em;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 1.50em;
+  font-weight: bold;
+}
+
+img {
+  width: 100%;
+}
+
+
+a {
+  color: #0078D7;
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  color: #FF7656;
+  text-decoration: underline;
+}
+
+a:active {
+  color: #FF5B34;
+}
+
+.button {
+  display: inline-block;
+  background-color: #0078D7;
+  color: #ffffff !important;
+  text-transform: uppercase;
+  font-weight: 400;
+  padding: 10px 25px;
+  border-radius: 50px;
+  transition: 0.2s opacity;
+}
+
+.button:hover {
+  opacity: 0.8;
+  text-decoration: none;
+}
+
+.button:active {
+  color: #FF5B34;
+}
+
+.button.contact {
+  background-color: transparent;
+  color: #ff7f50 !important;
+  text-transform: uppercase;
+  border: 2px solid #ff7f50;
+}
+
+.button.contact:hover {
+  background-color: #ff7f50;
+  color: #ffffff !important;
+  border: 2px solid #ff7f50;
+}
+
+.button.cv {
+  background-color: #ff7f50;
+  color: #ffffff !important;
+  text-transform: uppercase;
+
+}
+
+.button.cv:hover {
+  background-color: #ff7f50;
+  color: #ffffff !important;
+
+}
