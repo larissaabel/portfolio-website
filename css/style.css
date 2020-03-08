@@ -5,9 +5,24 @@ CTA secondary color (coral): #FF7656;
 Accent color (soft coral): #FFA38E;
 Accent color (turquoise): 9DCDD2;
 Background color (light grey): #F5F5F5;
-Background color (light coral): EED0C5;
-Background color (light turquoise): C0D0CF;
+Background color (light coral): #EED0C5;
+Background color (light turquoise): #C0D0CF;
 */
+* {
+  box-sizing: border-box; /*padding and border will now be included within the final width*/
+}
+
+header {
+  background-color: #EED0C5;
+  position: relative;
+  width: 100%;
+  text-align: center;
+  padding: 10px 0;
+  margin: 0px;/*I prefer not to have a visible margin*/
+  box-shadow: 0px 3px 15px 0px rgba(100, 100, 100, 0.7);
+  /*border-bottom: 3px solid #4a4a4a;*/
+}
+
 body {
   background-color: #FFFFFF;
   font-family: 'Roboto',sans-serif;
@@ -17,6 +32,11 @@ body {
   color: #2B2B2B;
 }
 
+footer {
+  background-color: #EED0C5;
+  padding: 15px;
+  margin: 0px;
+}
 
 h1, h2, h3 {
   line-height: 1.4;
@@ -49,7 +69,7 @@ a {
 a:hover,
 a:focus {
   color: #FF7656;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 a:active {
@@ -62,7 +82,7 @@ a:active {
   color: #ffffff !important;
   text-transform: uppercase;
   font-weight: 400;
-  padding: 10px 25px;
+  padding: 15px 25px;
   border-radius: 50px;
   transition: 0.2s opacity;
 }
@@ -70,6 +90,7 @@ a:active {
 .button:hover {
   opacity: 0.8;
   text-decoration: none;
+  font-weight: bold;
 }
 
 .button:active {
@@ -81,6 +102,7 @@ a:active {
   color: #ff7f50 !important;
   text-transform: uppercase;
   border: 2px solid #ff7f50;
+  margin-bottom: 25px;
 }
 
 .button.contact:hover {
@@ -93,11 +115,95 @@ a:active {
   background-color: #ff7f50;
   color: #ffffff !important;
   text-transform: uppercase;
-
 }
 
 .button.cv:hover {
   background-color: #ff7f50;
   color: #ffffff !important;
+}
 
+/* Layout styling --------------------------------------*/
+
+.container {
+  padding: 0 15px;
+}
+
+.row {
+  margin: 25px 0; /* 25px top and bottom, 0 left and right */
+}
+
+.center { /* rule set, applied for selected html elements */
+  text-align: center;
+}
+
+.logo {
+  max-width: 220px;
+}
+
+nav {
+  display: inline-block;
+  width: 100%;
+}
+
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav > ul > li {
+  display: inline-block;
+}
+
+nav > ul > li > a {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: bold;
+  background-color: none;
+  color: #2B2B2B;
+}
+
+/*nav > ul > li > a:visited {
+} For now, I do not want to have a visited state for this */
+
+nav > ul > li > a:hover {
+  background-color: #ff7f50;
+  color: #ffffff !important;
+  padding: 15px;
+  border-radius: 50px;
+}
+
+nav > ul > li > a:active {
+  background-color: #ff7f50;
+  color: #ffffff !important;
+  padding: 15px;
+  border-radius: 50px;
+}
+
+span {
+  display: inline-block;
+}
+
+#work .row {
+  padding-bottom: 25px; border-bottom: 1px solid #CCCCCC;
+}
+
+#hero {
+  background-color: #EED0C5;
+  display: inline-block;
+  width: 100%;
+}
+
+#about .column {
+  padding-bottom: 25px; border-bottom: 1px solid #CCCCCC;
+  margin: 25px 0;
+}
+
+#project1 .row {
+  padding-bottom: 20px;
+}
+
+#social svg {
+  width: 50px;
+  height: 50px;
+  margin: 0 10px;
 }
