@@ -10,11 +10,11 @@
   </head>
   <body>
     <header>
-      <div>
+      <div class="container">
         <!-- <a class="logo" href= "index.html">Larissa Abel</a> -->
-        <img class="logo" src="img/logo.png" alt="Larissa Abel">
+        <a href="index.html"><img class="logo" src="img/logo.png" alt="Larissa Abel"></a>
         <nav>
-          <ul>
+          <ul class="navigation">
             <li><a href="index.html">Work</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="#contact">Contact</a></li>
@@ -23,32 +23,31 @@
       </div>
     </header>
     <main>
-      <div> <!-- title section container (orange) -->
-        <div> <!-- container (yellow) -->
-          <h1 class="center">About</h1>
+      <div id="about"> <!-- title section container (orange) -->
+        <div id="hero" class="center"> <!-- container (yellow) -->
+          <h1>About</h1>
+          <div>
+            <picture>
+              <source srcset="img/ABOUT/ProfilePicture_600.png" media="(max-width:767px)">
+                <img src="img/ABOUT/ProfilePicture_1200.png" alt="Profile Image">
+            </picture>
+          </div>
         </div> <!-- end of container (yellow) -->
-      </div> <!-- end of title section container (orange) -->
-
-      <div id="about"> <!-- about me section container (orange) -->
         <div class="container"> <!-- container (yellow) -->
-          <picture>
-            <source srcset="img/ABOUT/ProfilePicture_600.png" media="(max-width:767px)">
-            <img src="img/ABOUT/ProfilePicture_1200.png" alt="Profile Image">
-          </picture>
-          <div class="row"> <!-- container (green) -->
-            <div class="column"> <!-- my story column -->
-              <h2 class="center">My Story</h2>
+          <div class="row"> <!-- row for my story culumn and skills&tools column -->
+            <div class="column col-xl-7"> <!-- my story column -->
+              <h2>My Story</h2>
               <p>I am a data-driven UX Designer from Berlin with profound experience in the eCommerce industry.</p>
               <p>Unusual for a UX Designer’s background, I graduated in Business Computing with a Master’s degree at the University of Applied Sciences in Berlin in 2018. As my main focus was on business intelligence, I gained relevant experience in the analytical area. Eventually, I got fascinated by the subject of User Experience through several courses and semester projects and my passion for identifying and solving user problems through design solutions grew. In 2017, I took the leap into my initial UX job as a working student at the Berlin-based eCommerce company ​idealo​, followed by an annual UX traineeship after graduation.</p>
               <p>Over the past years, I gained a wide range of skills and techniques to understand the users and identify their problems when they interact with a website by analyzing multiple data sources (e.g. heatmaps, Google Analytics, Sitespect) as well as interviewing users in insightful user tests. These skills are an essential part of my iterative user-centered design process. I am convinced that involving real users throughout the entire process as well as taking responsibility for every stage of the process is vital to design the best solution for them in the best way possible.</p>
-              <p>Apart from that, I find joy in creating illustrations such as posters, infographics and personal avatars to please my dear friends and colleagues. And I like to bring them homemade cookies, lots of cookies.</p>
+              <!-- <p>Apart from that, I find joy in creating illustrations such as posters, infographics and personal avatars to please my dear friends and colleagues. And I like to bring them homemade cookies, lots of cookies.</p> -->
               <p>If you have any questions or just want to get to know me, check out my resume and make sure to hit me up on ​linkedin​, ​xing​ or ​email​.</p>
               <a href="img/ABOUT/cv.pdf" target="_blank" class="button cv" download>Download my CV</a>
             </div> <!-- end of my story column -->
-            <div class="column"> <!-- skills & tools column -->
+            <div class="colummn col-xl-5"> <!-- skills & tools column -->
               <h2>Skills & Tools</h2>
               <div> <!-- container (green) -->
-                <div> <!-- relevant skills container -->
+                <div class="col-lg-6"> <!-- relevant skills column -->
                   <h3>Relevant Skills</h3>
                   <ul>
                     <li>Human Centered Design</li>
@@ -61,8 +60,8 @@
                     <li>Webdesign</li>
                     <li>Teamwork within Agile Frameworks such as Scrum and Kanban</li>
                   </ul>
-                </div> <!-- end of relevant skills container -->
-                <div> <!-- tools I use container -->
+                </div> <!-- end of relevant skills column -->
+                <div class="col-lg-6"> <!-- tools I use column -->
                   <h3>Tools I use</h3>
                   <ul>
                     <li>Sketch</li>
@@ -75,10 +74,10 @@
                     <li>Hotjar</li>
                     <li>Sitespect</li>
                   </ul>
-                </div> <!-- end of tools I use container -->
-              </div> <!-- end of container (green) -->
+                </div> <!-- end of tools I use column -->
+              </div> <!-- end of row -->
             </div> <!-- end of skills & tools column -->
-          </div> <!-- end of container (green) -->
+          </div> <!-- end of row for my story culumn and skills&tools column -->
         </div> <!-- end of container (yellow) -->
       </div> <!-- end of about me section container (orange) -->
     </main>
@@ -96,7 +95,7 @@
         <!-- Xing Icon -->
           <a href="https://www.xing.com/profile/Larissa_Abel5" target="_blank"><svg height="44px" viewBox="0 0 96 96" width="44px" xmlns="http://www.w3.org/2000/svg"><<title/><g data-name="Layer 2" id="Layer_2"><g data-name="Layer 2" id="Layer_2-2"><path d="M48,0A48,48,0,1,0,96,48,48,48,0,0,0,48,0ZM24.25,57.77l8.53-14.07L26.41,32.47h10.8l6.33,11.24L35,57.77ZM64.52,72.63H53l-11-19.28,17-29.88H70.56l-17,29.88Z"/></g></g></svg></a>
         </div> <!-- end of container with Social Media CTA -->
-        <p class="center">Copyright Larissa Abel 2019-2020</p>
+        <p class="center">Copyright Larissa Abel 2019 - 2020</p>
       </div> <!-- end of container (yellow) -->
     </footer>
   </body>
