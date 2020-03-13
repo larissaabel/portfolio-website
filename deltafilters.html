@@ -10,11 +10,11 @@
   </head>
   <body>
     <header>
-      <div>
+      <div class="container">
         <!-- <a class="logo" href= "index.html">Larissa Abel</a> -->
-        <img class="logo" src="img/logo.png" alt="Larissa Abel">
+        <a href="index.html"><img class="logo" src="img/logo.png" alt="Larissa Abel"></a>
         <nav>
-          <ul>
+          <ul class="navigation">
             <li><a href="index.html">Work</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="#contact">Contact</a></li>
@@ -23,41 +23,38 @@
       </div>
     </header>
     <main>
-      <div><!-- title section block (orange)-->
-        <div><!-- title container (yellow) -->
+      <div id="hero"><!-- title section block (orange)-->
+        <div class="container"><!-- title container (yellow) -->
           <h1 class="center">Project: Delta Filters</h1>
+          <p>This UX concept created and tested in January 2020 has the purpose to help users to find the right product variant with the desired delta attributes. Users were overwhelmed by the vast selection of product variants that were displayed as tiles on the product page (see image below). Depending on the number of values of the delta attributes such as color and size, it would reach a confusing number of different combinations defined as variants.</p>
         </div><!-- end of title container (yellow) -->
       </div> <!-- end of title section block (orange) -->
-      <div id="project1"><!-- content section block (orange)-->
+      <div id="project"><!-- content section block (orange)-->
         <div class="container"><!-- content container (yellow) -->
           <!--<picture>
             <source srcset="img/PROJECTS/Project_1/Project_1_Home_600.png" media="(max-width:767px)">
             <img src="img/PROJECTS/Project_1/Project_1_Home_1200.png" alt="UX Concept – Replace static product variants with dynamic delta attribute filters at idealo.de">
           </picture> -->
-          <p>This UX concept created and tested in January 2020 has the purpose to help users to find the right product variant with the desired delta attributes. Users were overwhelmed by the vast selection of product variants that were displayed as tiles on the product page (see image below). Depending on the number of values of the delta attributes such as color and size, it would reach a confusing number of different combinations defined as variants.</p>
           <div class="row"> <!-- paragraph 1 container -->
-            <div class="column"> <!-- paragraph 1 image column -->
-              <picture>
-                <source srcset="img/PROJECTS/Project_1/Project_1_DeltaFilters_before_600.jpg" media="(max-width:767px)">
+
+              <picture class="lfloat imgsize">
+                <!--
+                <source srcset="img/PROJECTS/Project_1/Project_1_DeltaFilters_before_600.jpg" media="(max-width:767px)"> -->
                 <img src="img/PROJECTS/Project_1/Project_1_DeltaAttributes_before_1200.jpg" alt="Before – vast selection of static variants at idealo.de">
               </picture>
-            </div> <!-- end of paragraph 1 image column -->
-            <div class="column"> <!-- paragraph 1 text column -->
-              <p>The user problem was identified by evaluating heatmaps and recordings via Hotjar as well as data through Google Analytics. Once hypothesized and put into a user story, the design process inspired by the Human Centered Design method was initiated with an extensive research phase. Valuable insights could be gained through a benchmark analysis and searching online for best practises, among them the findings of the Baymard institute.</p>
-              <p>The conclusion was that providing filters for each delta attribute of a product could potentially improve the overall usability and meet the state of the art.</p>
-              <p>Next, a scope according to the MoSCoW method was created to prioritize the features of the new concept, considering less important features to be included in next iterations.</p>
-              <p>Based on the research results and the scope, multiple design drafts were created with Axure in order to select the best variant out of them.</p>
-              <p>Since UX design colleagues as well as the responsible development team (Product Owner, Frontend developer and Backend developers) were involved into the process, a technically feasible and aesthetically pleasing design was created to be transformed into a clickable <a href="https://r40o7l.axshare.com/#id=ykdokl&p=smartphone__clickable_&c=1" target="_blank" >Mockup​</a> with Axure. (Note: clickable elements and functions only comply with the test guide).</p>
-            </div> <!-- end of paragraph 1 text column -->
+
+             <!-- paragraph 1 text column -->
+              <p>The user problem was identified by evaluating heatmaps and recordings via Hotjar as well as data through Google Analytics. Once hypothesized and put into a user story, the design process inspired by the Human Centered Design method was initiated with an extensive research phase. Valuable insights could be gained through a benchmark analysis and searching online for best practises, among them the findings of the Baymard institute. The conclusion was that providing filters for each delta attribute of a product could potentially improve the overall usability and meet the state of the art.</p>
+              <p>Next, a scope according to the MoSCoW method was created to prioritize the features of the new concept, considering less important features to be included in next iterations. Based on the research results and the scope, multiple design drafts were created with Axure in order to select the best variant out of them.Since UX design colleagues as well as the responsible development team (Product Owner, Frontend developer and Backend developers) were involved into the process, a technically feasible and aesthetically pleasing design was created to be transformed into a clickable <a href="https://r40o7l.axshare.com/#id=ykdokl&p=smartphone__clickable_&c=1" target="_blank" >Mockup​</a> with Axure. (Note: clickable elements and functions only comply with the test guide).</p>
+
           </div> <!-- end of paragraph 1 container -->
           <div class="row"> <!-- paragraph 2 container -->
-            <div class="column"> <!-- paragraph 2 image column -->
-              <picture>
-                <source srcset="img/PROJECTS/Project_1/Project_1_DeltaFilters_600.jpg" media="(max-width:767px)">
+
+              <picture class="rfloat imgsize">
+                <!-- <source srcset="img/PROJECTS/Project_1/Project_1_DeltaFilters_600.jpg" media="(max-width:767px)"> -->
                 <img src="img/PROJECTS/Project_1/Project_1_DeltaAttributes_-1200.jpg" alt="After – dynamic delta filters to select the preferred product attributes">
               </picture>
-            </div> <!-- end of paragraph 2 image column -->
-            <div class="column"> <!-- paragraph 2 text column -->
+
               <p>The display of unclear static product variants is now replaced by easily understandable delta attribute filters.​ The prototype shows the most important features of the new concept (1st iteration):</p>
               <ul>
                 <li>If the user selects a filter value, the list of offers below will show every offer according to the selected filter value, regardless of the unselected filters.</li>
@@ -67,7 +64,7 @@
                 <li>A reset button (“ALLE”) is added to every attribute filter to include every value of the filter.</li>
               </ul>
               <p>In order to test the new concept, five external users were invited to the idealo office to take part in a usability test. In summary, the new concept was very well received by every user. On the basis of the results, further concept and design improvements will be made. </p>
-            </div> <!-- end of paragraph 2 text column -->
+
           </div> <!-- end of paragraph 2 container -->
         </div><!-- end of content container (yellow) -->
       </div> <!-- end of content section block (orange) -->
@@ -86,7 +83,7 @@
         <!-- Xing Icon -->
           <a href="https://www.xing.com/profile/Larissa_Abel5" target="_blank"><svg height="44px" viewBox="0 0 96 96" width="44px" xmlns="http://www.w3.org/2000/svg"><<title/><g data-name="Layer 2" id="Layer_2"><g data-name="Layer 2" id="Layer_2-2"><path d="M48,0A48,48,0,1,0,96,48,48,48,0,0,0,48,0ZM24.25,57.77l8.53-14.07L26.41,32.47h10.8l6.33,11.24L35,57.77ZM64.52,72.63H53l-11-19.28,17-29.88H70.56l-17,29.88Z"/></g></g></svg></a>
         </div> <!-- end of container with Social Media CTA -->
-        <p class="center">Copyright Larissa Abel 2019-2020</p>
+        <p class="center">Copyright Larissa Abel 2019 - 2020</p>
       </div> <!-- end of container (yellow) -->
     </footer>
   </body>
