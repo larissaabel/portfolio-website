@@ -16,9 +16,8 @@ header {
   background-color: #ffeaea;
   position: fixed;
   width: 100%;
-  text-align: center;
-  padding-bottom: 10px;
   margin: 0px;/*I prefer not to have a visible margin*/
+  padding-bottom: 4px;
   box-shadow: 0px 3px 20px 0px rgba(150, 150, 150, 0.7);
   /*border-bottom: 3px solid #4a4a4a;*/
 }
@@ -33,7 +32,7 @@ body {
 }
 
 main {
- padding-top: 130px;
+ padding-top: 54px;
 }
 
 footer {
@@ -150,21 +149,14 @@ a:active {
 }
 
 .logo {
-  max-width: 220px;
-}
-
-nav {
-  display: inline-block;
-  width: 100%;
+  max-width: 150px;
+  margin-top: 12px;
 }
 
 nav > ul {
   list-style-type: none;
   padding: 0;
-}
-
-nav > ul > li {
-  display: inline-block;
+  margin: 0;
 }
 
 nav > ul > li > a {
@@ -175,23 +167,36 @@ nav > ul > li > a {
   color: #2B2B2B;
 }
 
-/*nav > ul > li > a:visited {
-} For now, I do not want to have a visited state for this */
-
-nav > ul > li > a:hover {
-  background-color: #ff7f50;
-  color: #ffffff !important;
-  padding: 15px;
-  border-radius: 50px;
-  transition: 0.2s;
+/* hide list elements except for the burger menu icon: */
+.navtoggle li:not(:last-child) {
+  display: none;
 }
 
-nav > ul > li > a:active {
-  background-color: #ff7f50;
-  color: #ffffff !important;
-  padding: 15px;
-  border-radius: 50px;
+.navtoggle, .navtoggle.responsive {
+  position: relative;
 }
+
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 15px;
+  font-size: 20px;
+}
+
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+.navtoggle.responsive li  {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px solid rgba(255,127,80,0.5);
+}
+
+.navtoggle.responsive li:last-child  {
+  padding: 0 0 10px;
+}
+
+
 
 span {
   display: inline-block;
@@ -322,12 +327,50 @@ Medium devices (640px and larger)
     margin-bottom: 5px;
   }
 
+  nav > ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 1em 0;
+  }
+
+  nav > ul > li {
+    display: inline-block;
+  }
+
+  nav > ul > li > a:hover {
+    background-color: #ff7f50;
+    color: #ffffff !important;
+    padding: 15px;
+    border-radius: 50px;
+    transition: 0.2s;
+  }
+
+  nav > ul > li > a:active {
+    background-color: #ff7f50;
+    color: #ffffff !important;
+    padding: 15px;
+    border-radius: 50px;
+  }
+
+/* show entire menu and hide burger menu icon: */
+  .navtoggle li:not(:last-child) {
+  display: inline-block;
+  }
+  .navtoggle li:last-child {
+  display: none;
+  }
+
   main {
     padding-top: 99px;
   }
 
   body {
     font-size: 1.125em;
+  }
+
+  .logo {
+    max-width: 220px;
+    margin-top: 0px;
   }
 
   .button {
